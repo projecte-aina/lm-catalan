@@ -2,7 +2,7 @@
 # Catalan Language Models & Datasets
 
 
-A repository part of the MarIA project.
+A repository for the AINA project.
 
 ## Corpora 📃
 
