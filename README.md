@@ -1,4 +1,6 @@
-# Spanish Language Models 💃🏻
+# Models de Llenguatge i Datasets per al Catalá 
+# Catalan Language Models & Datasets
+
 
 A repository part of the MarIA project.
 
