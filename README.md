@@ -1,4 +1,4 @@
-# Models de Llenguatge i Datasets<br/> per al Català 
+# Models de Llengua i Datasets<br/> per al Català 
 # Catalan Language Models & Datasets
 
 
@@ -30,11 +30,12 @@ _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.45
 
 - roberta-base-ca-cased-ner for NER: https://huggingface.co/projecte-aina/roberta-base-ca-cased-ner
 - roberta-base-ca-cased-pos for POS: https://huggingface.co/projecte-aina/roberta-base-ca-cased-pos
-
+- roberta-base-ca-cased-pos for text classification: https://huggingface.co/projecte-aina/roberta-base-ca-cased-tc
+- roberta-base-ca-cased-pos for textual entailment: https://huggingface.co/projecte-aina/roberta-base-ca-cased-te
 
 ## Word embeddings 🔤
 
-???
+https://doi.org/10.5281/zenodo.4522040
 
 ## Datasets 🗂️
 
