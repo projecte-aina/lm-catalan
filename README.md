@@ -1,9 +1,8 @@
-# Models de Llenguatge i Datasets per al Català 
+# Models de Llenguatge i Datasets<br/> per al Català 
 # Catalan Language Models & Datasets
 
 
-A repository for the AINA project.
-
+A repository for the AINA project.<br/>
 _Repositori del projecte AINA._
 
 ## Corpora 📃
@@ -21,8 +20,7 @@ _Repositori del projecte AINA._
 |**Total**              | **4,696.52**          | **2,193.54**          | 
 |**Deduplicated (CaText)** |                    | **1,770.32**          |
 
-The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348
-
+The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348<br/>
 _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348_
 
 ## Models 🤖
