@@ -24,7 +24,12 @@ The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.451
 _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348_
 
 ## Models 🤖
-...
+### BERTa: RoBERTa-based Catalan language model 
+BERTa is a transformer-based masked language model for the Catalan language. It is based on the RoBERTA base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.<br/>
+_BERTa és un model de llenguatge basat en transformers per a la llengua catalana. Es basa en el model RoBERTa-base i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
+
+https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
+
 
 ## Fine-tunned models 🧗🏼‍♀️🏇🏼🤽🏼‍♀️🏌🏼‍♂️🏄🏼‍♀️
 
