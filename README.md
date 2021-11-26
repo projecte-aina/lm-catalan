@@ -20,7 +20,7 @@ _El corpus d'entrenament és la suma de diversos corpus obtinguts a partir de co
 |7 Cat. Gov. Crawling   | 303.10                | 39.12                 | -    | crawling the [.gencat](gencat.cat) domain and subdomains |
 |8 [Cat. News Agency](https://www.acn.cat/)                  | 81.28                 | 75.61                 | -    | newswire text  |
 |**Total**              | **4,696.52**          | **2,193.54**          | -    | |
-|**Deduplicated (CaText)** |                    | **1,770.32**          |-    |  |
+|**Deduplicated (CaText)** |                    | **1,770.32**          |**10,9GB**    | https://doi.org/10.5281/zenodo.4519348 |
 
 To obtain a high-quality training corpus, each corpus have preprocessed with a pipeline of operations, including among the others, sentence splitting, language detection, filtering of bad-formed sentences and deduplication of repetitive contents. During the process, we keep document boundaries are kept. Finally, the corpora are concatenated and further global deduplication among the corpora is applied.<br/>
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
@@ -40,6 +40,10 @@ Available here: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
 
 The BERTa pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work. The training lasted a total of 48 hours with 16 NVIDIA V100 GPUs of 16GB DDRAM.
+
+_El corpus d'entrenament ha estat tokenitzat fent servir ...  a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
+
+_El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking (?), seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
 
 #### Usage example ⚗️
 For the RoBERTa-base
@@ -77,7 +81,7 @@ https://doi.org/10.5281/zenodo.4522040
 
 |name           | task                                    | link                                                        |
 |---------------|-----------------------------------------|-------------------------------------------------------------|
-| ancora-ca-pos | Part of Speech tagging                  | ????                                                        |
+| ancora-ca-pos | Part of Speech tagging                  | https://huggingface.co/datasets/universal_dependencies      |
 | ancora-ca-ner | Named Entity Recognition                | https://huggingface.co/datasets/projecte-aina/ancora-ca-ner |
 | STS-ca        | Semantic Textual Similarity             | https://huggingface.co/datasets/projecte-aina/sts-ca        |
 | TECa          | Textual Entailment                      | https://huggingface.co/datasets/projecte-aina/teca          |
