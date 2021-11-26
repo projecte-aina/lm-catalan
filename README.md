@@ -33,7 +33,7 @@ _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.45
 BERTa is a transformer-based masked language model for the Catalan language. It is based on the RoBERTA base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.<br/>
 _BERTa és un model de llenguatge basat en transformers per a la llengua catalana. Es basa en el model RoBERTa-base i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
 
-https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
+Available here: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
 #### Tokenization and pretraining 
 
@@ -41,7 +41,22 @@ The training corpus has been tokenized using a byte version of [Byte-Pair Encodi
 
 The BERTa pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work. The training lasted a total of 48 hours with 16 NVIDIA V100 GPUs of 16GB DDRAM.
 
-## Fine-tunned models 🧗🏼‍♀️🏇🏼🤽🏼‍♀️🏌🏼‍♂️🏄🏼‍♀️
+#### Usage example ⚗️
+For the RoBERTa-base
+```python
+from transformers import AutoModelForMaskedLM
+from transformers import AutoTokenizer, FillMaskPipeline
+from pprint import pprint
+tokenizer_hf = AutoTokenizer.from_pretrained('BSC-TeMU/roberta-base-ca')
+model = AutoModelForMaskedLM.from_pretrained('BSC-TeMU/roberta-base-ca')
+model.eval()
+pipeline = FillMaskPipeline(model, tokenizer_hf)
+text = f"¡Hola <mask>!"
+res_hf = pipeline(text)
+pprint([r['token_str'] for r in res_hf])
+```
+
+## Fine-tuned models 🧗🏼‍♀️🏇🏼🤽🏼‍♀️🏌🏼‍♂️🏄🏼‍♀️
 
 - roberta-base-ca-cased-ner for NER: https://huggingface.co/projecte-aina/roberta-base-ca-cased-ner
 - roberta-base-ca-cased-pos for POS: https://huggingface.co/projecte-aina/roberta-base-ca-cased-pos
@@ -51,7 +66,7 @@ The BERTa pretraining consists of a masked language model training that follows 
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
 
 ### Fine-tuning
-The fine-tuning scripts for the downstream taks are available here: https://github.com/projecte-aina/berta
+The fine-tuning scripts for the downstream taks are available here: https://github.com/projecte-aina/berta.<br/>
 They are based on the HuggingFace [**Transformers**](https://github.com/huggingface/transformers) library.
 
 ## Word embeddings 🔤
@@ -72,15 +87,9 @@ https://doi.org/10.5281/zenodo.4522040
 | ViquiQuAD     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/viquiquad     |
 
 ## CLUB: Catalan Language Understanding Benchmark
-The CLUB benchmark consists of 5 tasks, that are Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). For more information, refer [here](???).
+The CLUB benchmark consists of 5 tasks, that are Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
 
-## Evaluation ✅
-Evaluations results obtained running the scripts available [here](https://github.com/projecte-aina/berta).
-
-For each model we used the same fine-tuning setting across tasks, consisting of 10 training epochs, with an effective
-batch size of 32 instances, a max input length of 512 tokens (128 tokens in the case of Textual Entailment though) and a learning rate of 5e−5. The rest of the hyperparameters are set to the default values in Huggingface Transformers scripts. We then select the best checkpoint as the one that maximised the task-specific metric on the
-corresponding validation set, and finally evaluate it on the test set.
-
+### Results ✅
 
 | Model        | NER (F1)      | POS (F1)   | STS (Pearson)   | TC (accuracy) | QA (ViquiQuAD) (F1/EM)  | QA (XQuAD) (F1/EM) | TE (TECA) (accuracy) | 
 | ------------|:-------------:| -----:|:------|:-------|:------|:----|:----|
@@ -89,20 +98,8 @@ corresponding validation set, and finally evaluate it on the test set.
 | XLM-RoBERTa | 87.66 | 98.89 | 75.40 | 71.68 | 85.50/70.47 | 67.10/46.42 | x |
 | WikiBERT-ca | 77.66 | 97.60 | 77.18 | 73.22 | 85.45/70.75 | 65.21/36.60 | x |
 
-## Usage example ⚗️
-For the RoBERTa-base
-```python
-from transformers import AutoModelForMaskedLM
-from transformers import AutoTokenizer, FillMaskPipeline
-from pprint import pprint
-tokenizer_hf = AutoTokenizer.from_pretrained('BSC-TeMU/roberta-base-ca')
-model = AutoModelForMaskedLM.from_pretrained('BSC-TeMU/roberta-base-ca')
-model.eval()
-pipeline = FillMaskPipeline(model, tokenizer_hf)
-text = f"¡Hola <mask>!"
-res_hf = pipeline(text)
-pprint([r['token_str'] for r in res_hf])
-```
+For more information, refer [here](https://github.com/projecte-aina/berta).
+
 
 ## Other Catalan Language Models 👩‍👧‍👦
 ...
