@@ -9,18 +9,18 @@ _Repositori del projecte AINA._
 The training corpus consists of several corpora gathered from web crawling and public corpora.<br/>
 _El corpus d'entrenament és la suma de diversos corpus obtinguts a partir de corpus publics i crawlings del web._
 
-| Dataset               | Original n. of tokens | Final n. of tokens    | Size | Sort of documents                |
-|---------              |----------------------:|----------------------:|-----:|----------------------------------|
-|1 [DOGC](http://opus.nlpl.eu/DOGC-v2.php)                 |            126.65     |  126.65               | -    | documents from the Official Gazette of the Catalan Government |
-|2 [Cat. Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)  | 3.52                  | 3.52                  | -    | translated movie subtitles       |
-|3 [Cat. OSCAR](https://traces1.inria.fr/oscar/)          | 1,355.53              | 695.37                | -    | monolingual corpora, filtered from [Common Crawl](https://commoncrawl.org/about/) |
-|4 [CaWac](http://nlp.ffzg.hr/resources/corpora/cawac/)                | 1,535.10              | 650.98                | -    | a web corpus built from the .cat top-level-domain |
-|5 [Cat. Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/)            | 198.36                | 167.47                | -    | Catalan Wikipedia articles       |
-|6 Cat. Gen. Crawling   | 1,092.98              | 434.82                | -    | crawling of the 500 most popular .cat and .ad domains |
-|7 Cat. Gov. Crawling   | 303.10                | 39.12                 | -    | crawling the [.gencat](gencat.cat) domain and subdomains |
-|8 [Cat. News Agency](https://www.acn.cat/)                  | 81.28                 | 75.61                 | -    | newswire text  |
-|**Total**              | **4,696.52**          | **2,193.54**          | -    | |
-|**Deduplicated (CaText)** |                    | **1,770.32**          |**10,9GB**    | https://doi.org/10.5281/zenodo.4519348 |
+| Dataset                                                       | Original n. of tokens | Final n. of tokens | Size in GB| Sort of documents                |
+|---------                                                      |----------------------:|-------------------:|-----:|----------------------------------|
+|1 [DOGC](http://opus.nlpl.eu/DOGC-v2.php)                      |            126,65  |  126,65               | 0,801| documents from the Official Gazette of the Catalan Government |
+|2 [Cat. Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)  | 3,52                  | 3,52                  |0,019   | translated movie subtitles       |
+|3 [Cat. OSCAR](https://traces1.inria.fr/oscar/)                | 1.355,53           | 695,37                | 4    | monolingual corpora, filtered from [Common Crawl](https://commoncrawl.org/about/) |
+|4 [CaWac](http://nlp.ffzg.hr/resources/corpora/cawac/)         | 1.535,10           | 650,98                | 3,6    | a web corpus built from the .cat top-level-domain |
+|5 [Cat. Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/)| 198,36                | 167,47                | 0,98    | Catalan Wikipedia articles       |
+|6 Cat. Gen. Crawling                                           | 1.092,98           | 434,82                | 2,6  | crawling of the 500 most popular .cat and .ad domains |
+|7 Cat. Gov. Crawling                                           | 303,10             | 39,12                 | 0,247    | crawling the [.gencat](gencat.cat) domain and subdomains |
+|8 [Cat. News Agency](https://www.acn.cat/)                     | 81,28              | 75,61                 | 0,447   | newswire text  |
+|**Total**                                                      | **4.696,52**       | **2.193,54**          |**12.694**    | |
+|**Deduplicated (CaText)**                                      |                    | **1.770,32**          |**10.9GB**    | https://doi.org/10.5281/zenodo.4519348 |
 
 To obtain a high-quality training corpus, each corpus have preprocessed with a pipeline of operations, including among the others, sentence splitting, language detection, filtering of bad-formed sentences and deduplication of repetitive contents. During the process, we keep document boundaries are kept. Finally, the corpora are concatenated and further global deduplication among the corpora is applied.<br/>
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
@@ -73,6 +73,9 @@ pprint([r['token_str'] for r in res_hf])
 The fine-tuning scripts for the downstream taks are available here: https://github.com/projecte-aina/berta.<br/>
 They are based on the HuggingFace [**Transformers**](https://github.com/huggingface/transformers) library.
 
+_Els scripts de fine-tuning per aquestes tasques es poden trobar aquí: https://github.com/projecte-aina/berta.<br/>
+Es basen en la llibreria [**Transformers**](https://github.com/huggingface/transformers) de HuggingFace._
+
 ## Word embeddings 🔤
 
 https://doi.org/10.5281/zenodo.4522040
@@ -92,7 +95,7 @@ https://doi.org/10.5281/zenodo.4522040
 
 ## CLUB: Catalan Language Understanding Benchmark
 The CLUB benchmark consists of 5 tasks, that are Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
-
+_El benchmark CLUB consiteix en 5 tasques, que són etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA):._
 ### Results ✅
 
 | Model        | NER (F1)      | POS (F1)   | STS (Pearson)   | TC (accuracy) | QA (ViquiQuAD) (F1/EM)  | QA (XQuAD) (F1/EM) | TE (TECA) (accuracy) | 
