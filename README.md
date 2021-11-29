@@ -95,7 +95,8 @@ https://doi.org/10.5281/zenodo.4522040
 
 ## CLUB: Catalan Language Understanding Benchmark
 The CLUB benchmark consists of 5 tasks, that are Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
-_El benchmark CLUB consiteix en 5 tasques, que són etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA):._
+
+_El benchmark CLUB consiteix en 5 tasques, que són: etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA)._
 ### Results ✅
 
 | Model        | NER (F1)      | POS (F1)   | STS (Pearson)   | TC (accuracy) | QA (ViquiQuAD) (F1/EM)  | QA (XQuAD) (F1/EM) | TE (TECA) (accuracy) | 
