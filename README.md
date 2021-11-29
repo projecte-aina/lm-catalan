@@ -41,9 +41,9 @@ The training corpus has been tokenized using a byte version of [Byte-Pair Encodi
 
 The BERTa pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work. The training lasted a total of 48 hours with 16 NVIDIA V100 GPUs of 16GB DDRAM.
 
-_El corpus d'entrenament ha estat tokenitzat fent servir ...  a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
+_El corpus d'entrenament ha estat tokenitzat fent servir una versió byte de [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
 
-_El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking (?), seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
+_El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking, seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
 
 #### Usage example ⚗️
 For the RoBERTa-base
@@ -135,6 +135,9 @@ For more information, refer [here](https://github.com/projecte-aina/berta).
 ```
 
 ## Contact 📧
-📋 We are interested in (1) extending our corpora to make larger models (2) train/evaluate the model in other tasks.
-
+📋 We are interested in (1) extending our corpora to make larger models (2) train/evaluate the model in other tasks.<br/>
 For questions regarding this work, contact us at aina@bsc.es
+
+📋 _Necessitem (1) ampliar el nostre corpus per poder fer models més grans i (2) entrenar i avaluar el model en més tasques._<br/>
+_Per qualsevol cosa relacionada amb aquesta feina, podeu contactar-nos a aina@bsc.es_
+
