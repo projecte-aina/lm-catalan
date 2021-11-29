@@ -22,7 +22,7 @@ _El corpus d'entrenament és la suma de diversos corpus obtinguts a partir de co
 |**Total**                                                      | **4.696,52**       | **2.193,54**          |**12.694**    | |
 |**Deduplicated (CaText)**                                      |                    | **1.770,32**          |**10.9GB**    | https://doi.org/10.5281/zenodo.4519348 |
 
-To obtain a high-quality training corpus, each corpus have preprocessed with a pipeline of operations, including among the others, sentence splitting, language detection, filtering of bad-formed sentences and deduplication of repetitive contents. During the process, we keep document boundaries are kept. Finally, the corpora are concatenated and further global deduplication among the corpora is applied.<br/>
+To obtain a high-quality training corpus, each corpus has been preprocessed with a pipeline of different operations, including, among the others, sentence splitting, language detection, filtering of badly-formed sentences and deduplication of repetitive contents. During the process, we kept document boundaries. Finally, the corpora are concatenated and further global deduplication among them is applied.<br/>
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
 
 The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348<br/>
@@ -70,13 +70,13 @@ pprint([r['token_str'] for r in res_hf])
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
 
 ### Fine-tuning
-The fine-tuning scripts for the downstream taks are available here: https://github.com/projecte-aina/berta.<br/>
+The fine-tuning scripts for the downstream tasks are available here: https://github.com/projecte-aina/berta.<br/>
 They are based on the HuggingFace [**Transformers**](https://github.com/huggingface/transformers) library.
 
 _Els scripts de fine-tuning per aquestes tasques es poden trobar aquí: https://github.com/projecte-aina/berta.<br/>
 Es basen en la llibreria [**Transformers**](https://github.com/huggingface/transformers) de HuggingFace._
 
-## Word embeddings 🔤
+## Word embeddings (FastText) 🔤
 
 https://doi.org/10.5281/zenodo.4522040
 
@@ -94,9 +94,9 @@ https://doi.org/10.5281/zenodo.4522040
 | ViquiQuAD     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/viquiquad     |
 
 ## CLUB: Catalan Language Understanding Benchmark
-The CLUB benchmark consists of 5 tasks, that are Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
+The CLUB benchmark consists of 5 tasks: Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
 
-_El benchmark CLUB consiteix en 5 tasques, que són: etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA)._
+_El benchmark CLUB consisteix en 5 tasques: etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA)._
 ### Results ✅
 
 | Model        | NER (F1)      | POS (F1)   | STS (Pearson)   | TC (accuracy) | QA (ViquiQuAD) (F1/EM)  | QA (XQuAD) (F1/EM) | TE (TECA) (accuracy) | 
