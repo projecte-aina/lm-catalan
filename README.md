@@ -23,6 +23,7 @@ _El corpus d'entrenament és la suma de diversos corpus obtinguts a partir de co
 |**Deduplicated (CaText)**                                      |                    | **1.770,32**          |**10.9GB**    | https://doi.org/10.5281/zenodo.4519348 |
 
 To obtain a high-quality training corpus, each corpus has been preprocessed with a pipeline of different operations, including, among the others, sentence splitting, language detection, filtering of badly-formed sentences and deduplication of repetitive contents. During the process, we kept document boundaries. Finally, the corpora are concatenated and further global deduplication among them is applied.<br/>
+
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
 
 The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348<br/>
@@ -31,6 +32,7 @@ _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.45
 ## Models 🤖
 ### BERTa: RoBERTa-based Catalan language model 
 BERTa is a transformer-based masked language model for the Catalan language. It is based on the RoBERTA base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.<br/>
+
 _BERTa és un model de llenguatge basat en transformers per a la llengua catalana. Es basa en el model RoBERTa-base i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
 
 🤖 Available here: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
