@@ -113,9 +113,6 @@ For more information, refer [here](https://github.com/projecte-aina/club).
 
 _[Aquí](https://github.com/projecte-aina/club) trobareu més informació._
 
-
-## Other Catalan Language Models 👩‍👧‍👦
-...
 ## Cite 📣
 ```
 @inproceedings{armengol-estape-etal-2021-multilingual,
