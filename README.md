@@ -2,8 +2,8 @@
 # Catalan Language Models & Datasets
 
 
-A repository for the AINA project.<br/>
-_Repositori del projecte AINA._
+A repository for the [AINA project](https://politiquesdigitals.gencat.cat/en/tic/aina-el-projecte-per-garantir-el-catala-en-lera-digital/index.html).<br/>
+_Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/tic/aina-el-projecte-per-garantir-el-catala-en-lera-digital/)._
 
 ## Corpora 📃
 The training corpus consists of several corpora gathered from web crawling and public corpora.<br/>
@@ -16,22 +16,23 @@ _El corpus d'entrenament és la suma de diversos corpus obtinguts a partir de co
 |3 [Cat. OSCAR](https://traces1.inria.fr/oscar/)                | 1.355,53           | 695,37                | 4    | monolingual corpora, filtered from [Common Crawl](https://commoncrawl.org/about/) |
 |4 [CaWac](http://nlp.ffzg.hr/resources/corpora/cawac/)         | 1.535,10           | 650,98                | 3,6    | a web corpus built from the .cat top-level-domain |
 |5 [Cat. Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/)| 198,36                | 167,47                | 0,98    | Catalan Wikipedia articles       |
-|6 Cat. Gen. Crawling                                           | 1.092,98           | 434,82                | 2,6  | crawling of the 500 most popular .cat and .ad domains |
-|7 Cat. Gov. Crawling                                           | 303,10             | 39,12                 | 0,247    | crawling the [.gencat](gencat.cat) domain and subdomains |
+|6 [Cat. Gen. Crawling](https://doi.org/10.5281/zenodo.4636227)                                           | 1.092,98           | 434,82                | 2,6  | crawling of the 500 most popular .cat and .ad domains |
+|7 [Cat. Gov. Crawling](https://doi.org/10.5281/zenodo.4636485)                                           | 303,10             | 39,12                 | 0,247    | crawling the [.gencat](gencat.cat) domain and subdomains |
 |8 [Cat. News Agency](https://www.acn.cat/)                     | 81,28              | 75,61                 | 0,447   | newswire text  |
 |**Total**                                                      | **4.696,52**       | **2.193,54**          |**12.694**    | |
 |**Deduplicated (CaText)**                                      |                    | **1.770,32**          |**10.9GB**    | https://doi.org/10.5281/zenodo.4519348 |
 
-To obtain a high-quality training corpus, each corpus has been preprocessed with a pipeline of different operations, including, among the others, sentence splitting, language detection, filtering of badly-formed sentences and deduplication of repetitive contents. During the process, we kept document boundaries. Finally, the corpora are concatenated and further global deduplication among them is applied.<br/>
+To obtain a high-quality training corpus, each corpus has been preprocessed with a pipeline of different operations, including, among the others, sentence splitting, language detection, filtering of badly-formed sentences and deduplication of repetitive contents. During the process, we kept document boundaries. Finally, the corpora are concatenated and further global deduplication among them is applied.
+
+The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348.
 
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
 
-The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.4519348<br/>
-_Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348_
+_Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348._
 
 ## Models 🤖
 ### BERTa: RoBERTa-based Catalan language model 
-BERTa is a transformer-based masked language model for the Catalan language. It is based on the RoBERTA base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.<br/>
+BERTa is a transformer-based masked language model for the Catalan language. It is based on the RoBERTA base model and has been trained on a medium-size corpus collected from publicly available corpora and crawlers.
 
 _BERTa és un model de llenguatge basat en transformers per a la llengua catalana. Es basa en el model RoBERTa-base i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
 
@@ -108,7 +109,7 @@ _El benchmark CLUB consisteix en 5 tasques: etiquetat de categoria gramatical (P
 | XLM-RoBERTa | 87.66 | 98.89 | 75.40 | 71.68 | 85.50/70.47 | 67.10/46.42 | x |
 | WikiBERT-ca | 77.66 | 97.60 | 77.18 | 73.22 | 85.45/70.75 | 65.21/36.60 | x |
 
-For more information, refer [here](https://github.com/projecte-aina/berta).
+For more information, refer [here](https://github.com/projecte-aina/club).
 
 
 ## Other Catalan Language Models 👩‍👧‍👦
