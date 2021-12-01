@@ -1,5 +1,5 @@
-# Models de Llengua i Datasets<br/> per al Català 
-# Catalan Language Models & Datasets
+# Models de Llengua i Datasets<br/> per al Català 💬
+# Catalan Language Models & Datasets 💬
 
 
 A repository for the [AINA project](https://politiquesdigitals.gencat.cat/en/tic/aina-el-projecte-per-garantir-el-catala-en-lera-digital/index.html).<br/>
@@ -38,7 +38,7 @@ _BERTa és un model de llenguatge basat en transformers per a la llengua catalan
 
 🤖 Available here: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
-#### Tokenization and pretraining 
+#### Tokenization and pretraining 🧩
 
 The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
 
@@ -96,7 +96,7 @@ https://doi.org/10.5281/zenodo.4522040
 | VilaQuAD      | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/vilaquad      |
 | ViquiQuAD     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/viquiquad     |
 
-## CLUB: Catalan Language Understanding Benchmark
+## CLUB: Catalan Language Understanding Benchmark 🏆
 The CLUB benchmark consists of 5 tasks: Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
 
 _El benchmark CLUB consisteix en 5 tasques: etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA)._
@@ -110,6 +110,8 @@ _El benchmark CLUB consisteix en 5 tasques: etiquetat de categoria gramatical (P
 | WikiBERT-ca | 77.66 | 97.60 | 77.18 | 73.22 | 85.45/70.75 | 65.21/36.60 | x |
 
 For more information, refer [here](https://github.com/projecte-aina/club).
+
+_[Aquí](https://github.com/projecte-aina/club) trobareu més informació._
 
 
 ## Other Catalan Language Models 👩‍👧‍👦
