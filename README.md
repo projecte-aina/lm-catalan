@@ -73,10 +73,10 @@ pprint([r['token_str'] for r in res_hf])
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
 
 ### Fine-tuning
-The fine-tuning scripts for the downstream tasks are available here: https://github.com/projecte-aina/berta.<br/>
+The fine-tuning scripts for the downstream tasks are available here: https://github.com/projecte-aina/club.<br/>
 They are based on the HuggingFace [**Transformers**](https://github.com/huggingface/transformers) library.
 
-_Els scripts de fine-tuning per aquestes tasques es poden trobar aquí: https://github.com/projecte-aina/berta.<br/>
+_Els scripts de fine-tuning per aquestes tasques es poden trobar aquí: https://github.com/projecte-aina/club.<br/>
 Es basen en la llibreria [**Transformers**](https://github.com/huggingface/transformers) de HuggingFace._
 
 ## Word embeddings (FastText) 🔤
