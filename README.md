@@ -53,7 +53,7 @@ _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de 
 
 #### BERTa
 
-| Dataset                                                           | Size in GB|
+| Corpus                                                           | Size in GB|
 |---------                                                          |-----------|
 |[DOGC](http://opus.nlpl.eu/DOGC-v2.php)                            | 0,801     |
 |[Cat. Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)  |0,019   |
