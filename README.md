@@ -7,7 +7,7 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/tic/ain
 
 
 ## Models 🤖
-* roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
+* ✨ <b>new</b> ✨ roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
 RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
@@ -28,41 +28,45 @@ _El corpus d'entrenament ha estat tokenitzat fent servir un [(BPE) a nivell de b
 
 _El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking, seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
 
-### Training corpora
+## Word embeddings (FastText) 🔤
+
+https://doi.org/10.5281/zenodo.4522040
+
+## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
 _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de corpus publics i crawlings del web._
 
-#### roberta-base-ca-v2
+### roberta-base-ca-v2
 
-| Corpus                  | Size in GB |
-|-------------------------|------------|
-| BNE-ca                  | 13.00      |
-| Wikipedia               | 1.10       |
-| DOGC                    | 0.78       |
-| Catalan Open Subtitles  | 0.02       |
-| Catalan Oscar           | 4.00       |
-| CaWaC                   | 3.60       |
-| Cat. General Crawling   | 2.50       |
-| Cat. Goverment Crawling | 0.24       |
-| ACN                     | 0.42       |
-| Padicat                 | 0.63       |
-| RacoCatalá              | 8.10       |
-| Nació Digital           | 0.42       |
-| Vilaweb                 | 0.06       |
-| Tweets                  | 0.02       |
+| Corpus                                                            | Size in GB |
+|-------------------------                                          |------------|
+| BNE-ca                                                            | 13.00      |
+| [Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/) | 1.10       |
+| [DOGC](http://opus.nlpl.eu/DOGC-v2.php)                           | 0.78       |
+| [Catalan Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)   | 0.02       |
+| [Catalan Oscar](https://traces1.inria.fr/oscar/)                  | 4.00       |
+| [CaWaC](http://nlp.ffzg.hr/resources/corpora/cawac/)              | 3.60       |
+| [Cat. General Crawling](https://doi.org/10.5281/zenodo.4636227)   | 2.50       |
+| [Cat. Goverment Crawling](https://doi.org/10.5281/zenodo.4636485) | 0.24       |
+| [Cat. News Agency](https://www.acn.cat/)                          | 0.42       |
+| Padicat                                                           | 0.63       |
+| [RacoCatalá](https://www.racocatala.cat/)                         | 8.10       |
+| [Nació Digital](https://www.naciodigital.cat/)                    | 0.42       |
+| [Vilaweb](https://www.vilaweb.cat/)                               | 0.06       |
+| Tweets                                                            | 0.02       |
 
-#### BERTa
+### BERTa and Word embeddings
 
-| Corpus                                                           | Size in GB|
+| Corpus                                                            | Size in GB|
 |---------                                                          |-----------|
-|[DOGC](http://opus.nlpl.eu/DOGC-v2.php)                            | 0,801     |
-|[Cat. Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)  |0,019   |
+|[DOGC](http://opus.nlpl.eu/DOGC-v2.php)                            | 0.801     |
+|[Cat. Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)  |0.019   |
 |[Cat. OSCAR](https://traces1.inria.fr/oscar/)                      | 4         |
-|[CaWac](http://nlp.ffzg.hr/resources/corpora/cawac/)               | 3,6       |
-|[Cat. Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/)| 0,98    |
-|[Cat. General Crawling](https://doi.org/10.5281/zenodo.4636227)    | 2,6       |
-|[Cat. Goverment Crawling](https://doi.org/10.5281/zenodo.4636485)  | 0,247     |
-|[Cat. News Agency](https://www.acn.cat/)                           | 0,447     |
+|[CaWac](http://nlp.ffzg.hr/resources/corpora/cawac/)               | 3.6       |
+|[Cat. Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/)| 0.98    |
+|[Cat. General Crawling](https://doi.org/10.5281/zenodo.4636227)    | 2.6       |
+|[Cat. Goverment Crawling](https://doi.org/10.5281/zenodo.4636485)  | 0.247     |
+|[Cat. News Agency](https://www.acn.cat/)                           | 0.447     |
 
 To obtain a high-quality training corpus, each corpus has been preprocessed with a pipeline of different operations, including, among the others, sentence splitting, language detection, filtering of badly-formed sentences and deduplication of repetitive contents. During the process, we kept document boundaries. Finally, the corpora are concatenated and further global deduplication among them is applied.
 
@@ -99,6 +103,8 @@ pprint([r['token_str'] for r in res_hf])
 
 ## Fine-tuned models 🧗🏼‍♀️🏇🏼🤽🏼‍♀️🏌🏼‍♂️🏄🏼‍♀️
 
+Fine-tuned from BERTa model:
+
 - roberta-base-ca-cased-ner for NER: https://huggingface.co/projecte-aina/roberta-base-ca-cased-ner
 - roberta-base-ca-cased-pos for POS: https://huggingface.co/projecte-aina/roberta-base-ca-cased-pos
 - roberta-base-ca-cased-tc for text classification: https://huggingface.co/projecte-aina/roberta-base-ca-cased-tc
@@ -112,10 +118,6 @@ They are based on the HuggingFace [**Transformers**](https://github.com/huggingf
 
 _Els scripts de fine-tuning per aquestes tasques es poden trobar aquí: https://github.com/projecte-aina/club.<br/>
 Es basen en la llibreria [**Transformers**](https://github.com/huggingface/transformers) de HuggingFace._
-
-## Word embeddings (FastText) 🔤
-
-https://doi.org/10.5281/zenodo.4522040
 
 ## Datasets 🗂️
 
