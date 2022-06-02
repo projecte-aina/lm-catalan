@@ -20,13 +20,13 @@ _RoBERTa-ca-v2 i BERTa són models de llenguatge basat en transformers per a la 
 
 The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2)
 used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
-The RoBERTa-ca-v2 pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model
-with the same hyperparameters as in the original work.
-The training lasted a total of 48 hours with 16 NVIDIA V100 GPUs of 16GB DDRAM.
+The RoBERTa-ca-v2 pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work.
+With 16 NVIDIA V100 GPUs of 16GB DDRAM the training lasted a total of 48 hours for BERTa and a total or 96 hours for RoBERTa-ca-v2.
 
 _El corpus d'entrenament ha estat tokenitzat fent servir un [(BPE) a nivell de bytes](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
 
-_El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking, seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
+_El pre-entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking, seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. _
+_L'entrenament es va fer amb 16 GPUs NVIDIA V100 de 16GB DDRAM i va durar 48 hores per al model BERTa i 96 per al RoBERTa-ca-v2._
 
 ## Word embeddings (FastText) 🔤
 
