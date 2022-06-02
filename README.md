@@ -16,7 +16,7 @@ and have been trained on a medium-size corpus collected from publicly available 
 
 _RoBERTa-ca-v2 i BERTa són models de llenguatge basat en transformers per a la llengua catalana. Es basen en el model [RoBERTa-base](https://github.com/pytorch/fairseq/tree/master/examples/roberta) i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
 
-### Tokenization and pretraining 
+### Tokenization and pretraining 🧩
 
 The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2)
 used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
@@ -75,16 +75,6 @@ The Catalan Textual Corpus can be found here: https://doi.org/10.5281/zenodo.451
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
 
 _Aquí podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348._
-
-### Tokenization and pretraining 🧩
-
-The training corpora have been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
-
-The BERTa pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work. The training lasted a total of 48 hours with 16 NVIDIA V100 GPUs of 16GB DDRAM.
-
-_Els corpus d'entrenament han estat tokenitzat fent servir un [(BPE) a nivell de bytes](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
-
-_El pre entrenament de BERTa consisteix en un entrenament de model de llenguatge per masking, seguint l'enfoc que es va utilitzar per al model RoBERTa-base, amb els mateixos hiperparàmetres que en treball original. L'entrenament va durar 48 hores amb 16 GPUs NVIDIA V100 de 16GB DDRAM._
 
 ## Usage example ⚗️
 For the RoBERTa-base
