@@ -40,7 +40,7 @@ _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de 
 
 | Corpus                                                            | Size in GB |
 |-------------------------                                          |------------|
-| BNE-ca                                                            | 13.00      |
+| Catalan Crawling                                                  | 13.00      |
 | [Wikipedia](https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/cawiki/20200801/) | 1.10       |
 | [DOGC](http://opus.nlpl.eu/DOGC-v2.php)                           | 0.78       |
 | [Catalan Open Subtitles](http://opus.nlpl.eu/download.php?f=OpenSubtitles/v2018/mono/OpenSubtitles.raw.ca.gz)   | 0.02       |
