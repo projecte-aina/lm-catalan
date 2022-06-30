@@ -113,30 +113,31 @@ Es basen en la llibreria [**Transformers**](https://github.com/huggingface/trans
 
 |name           | task                                    | link                                                        |
 |---------------|-----------------------------------------|-------------------------------------------------------------|
-| ancora-ca-pos | Part of Speech tagging                  | https://huggingface.co/datasets/universal_dependencies      |
 | ancora-ca-ner | Named Entity Recognition                | https://huggingface.co/datasets/projecte-aina/ancora-ca-ner |
+| ancora-ca-pos | Part of Speech tagging                  | https://huggingface.co/datasets/universal_dependencies      |
 | STS-ca        | Semantic Textual Similarity             | https://huggingface.co/datasets/projecte-aina/sts-ca        |
-| TECa          | Textual Entailment                      | https://huggingface.co/datasets/projecte-aina/teca          |
 | TeCla         | Text Classification                     | https://huggingface.co/datasets/projecte-aina/tecla         |
-| xquad-ca      | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/xquad-ca      |
+| TECa          | Textual Entailment                      | https://huggingface.co/datasets/projecte-aina/teca          |
 | VilaQuAD      | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/vilaquad      |
 | ViquiQuAD     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/viquiquad     |
+| CatalanQA     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/catalanqa     |
+| xquad-ca      | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/xquad-ca      |
 
 ## CLUB: Catalan Language Understanding Benchmark 🏆
-The CLUB benchmark consists of 5 tasks: Part-of-Speech Tagging (POS), Named Entity Recognition (NER), Text Classification (TC), Semantic Textual Similarity (STS) and Question Answering (QA). 
+The CLUB benchmark consists of 6 tasks: Named Entity Recognition (NER), Part-of-Speech Tagging (POS), Semantic Textual Similarity (STS), Text Classification (TC), Textual Entailment (TE), and Question Answering (QA). 
 
-_El benchmark CLUB consisteix en 5 tasques: etiquetat de categoria gramatical (POS), reconeixement d'entitats (NER), classificació textual (TC), similitut textual semàntica (STS) i resposta de preguntes (QA)._
+_El benchmark CLUB consisteix en 6 tasques: reconeixement d'entitats (NER), etiquetat de categoria gramatical (POS), similitut textual semàntica (STS), classificació textual (TC), implicació textual (TE) i resposta de preguntes (QA)._
 
 ### Results ✅
 
+| Task        | NER (F1)      | POS (F1)   | STS (Combined)   | TC (Accuracy) | TE (Accuracy) | QA (Vilaquad) (F1/EM)| QA (ViquiQuAD) (F1/EM) | QA (CatalanQA) (F1/EM) | QA (XQuAD-Ca)* (F1/EM) | 
+| ------------|:-------------:| -----:|:------|:------|:-------|:------|:----|:----|:----|
+| RoBERTa-base-ca-v2      | **89.45** | 99.09 | 79.07 | **74.26** | **83.14** | **87.74/72.58** | **88.72/75.91** | **89.50**/76.63 | **73.64/55.42** |
+| BERTa      | 88.94 | **99.10** | **80.19** | 73.65 | 79.26 | 85.93/70.58 | 87.12/73.11 | 89.17/**77.14** | 69.20/51.47 |
+| mBERT      | 87.36 | 98.98 | 74.26 | 69.90 | 74.63 | 82.78/67.33 | 86.89/73.53 | 86.90/74.19 | 68.79/50.80 |
+| XLM-RoBERTa      | 88.07 | 99.03 | 61.61 | 70.14 | 33.30 | 86.29/71.83 | 86.88/73.11 | 88.17/75.93 | 72.55/54.16 |
 
-| Task        | NER (F1)      | POS (F1)   | STS (Combined)   | TC (F1) | TE (accuracy) | QA (ViquiQuAD) (F1/EM)  | QA (XQuAD) (F1/EM) | 
-| ------------|:-------------:| -----:|:------|:------|:-------|:------|:----|
-| RoBERTa-base-ca-v2       | **89.84** | **99.07** | **79.99** | 72.74 | **83.42** | **88.04/74.65** | **71.50/53.41** |
-| BERTa       | 88.13 | 98.97 | 79.73 | **74.16** | 78.27 | 86.97/72.29 | 68.89/48.87 |
-| mBERT       | 86.38 | 98.82 | 76.34 | 70.56 | - | 86.97/72.22 | 67.15/46.51 |
-| XLM-RoBERTa | 87.66 | 98.89 | 75.40 | 71.68 | - | 85.50/70.47 | 67.10/46.42 |
-| WikiBERT-ca | 77.66 | 97.60 | 77.18 | 73.22 | - | 85.45/70.75 | 65.21/36.60 |
+*: Trained on CatalanQA, tested on XQuAD-Ca.
 
 For more information, refer [here](https://github.com/projecte-aina/club).
 
