@@ -9,6 +9,7 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/tic/ain
 ## Models 🤖
 * ✨ <b>new</b> ✨ roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
+* version "large": https://huggingface.co/projecte-aina/roberta-large-ca-v2
 
 RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
