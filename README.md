@@ -32,6 +32,10 @@ _El pre-entrenament de BERTa consisteix en un entrenament de model de llenguatge
 
 https://doi.org/10.5281/zenodo.4522040
 
+## Word Embeddings (more efficient Floret version)
+
+https://zenodo.org/record/7330331
+
 ## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
 _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de corpus publics i crawlings del web._
