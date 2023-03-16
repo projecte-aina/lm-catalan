@@ -2,8 +2,8 @@
 # Catalan Language Models & Datasets 💬
 
 
-A repository for the [AINA project](https://politiquesdigitals.gencat.cat/en/tic/aina-el-projecte-per-garantir-el-catala-en-lera-digital/index.html).<br/>
-_Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/tic/aina-el-projecte-per-garantir-el-catala-en-lera-digital/)._
+A repository for the [AINA project](https://politiquesdigitals.gencat.cat/ca/economia/catalonia-ai/aina/).<br/>
+_Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economia/catalonia-ai/aina/)._
 
 
 ## Models 🤖
