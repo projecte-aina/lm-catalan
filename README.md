@@ -16,7 +16,7 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 
 Ǎguila-7B Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b) model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute.
 
-Ǎguila-7B Ǎguila és un LLM de 7B de paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos.
+_Ǎguila-7B Ǎguila és un LLM de 7B de paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos._
 
 RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
