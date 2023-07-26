@@ -7,10 +7,13 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 
 
 ## Models 🤖
+* ✨ <b>new</b> ✨ Ǎguila-7B: https://huggingface.co/projecte-aina/aguila-7b
 * ✨ <b>new</b> ✨ roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
 *  ✨ <b>new</b> ✨  version "large": https://huggingface.co/projecte-aina/roberta-large-ca-v2
 *  ✨ <b>new</b> ✨  versió  longformer, amb un context mes gran: https://huggingface.co/projecte-aina/longformer-base-4096-ca-v2
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
+
+Ǎguila-7B Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the Falcon-7b model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute.
 
 
 RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
