@@ -8,9 +8,9 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 
 ## Models 🤖
 * ✨ <b>new</b> ✨ Ǎguila-7B: https://huggingface.co/projecte-aina/aguila-7b
-* ✨ <b>new</b> ✨ roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
-*  ✨ <b>new</b> ✨  version "large": https://huggingface.co/projecte-aina/roberta-large-ca-v2
-*  ✨ <b>new</b> ✨  versió  longformer, amb un context mes gran: https://huggingface.co/projecte-aina/longformer-base-4096-ca-v2
+* roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
+* version "large": https://huggingface.co/projecte-aina/roberta-large-ca-v2
+* versió  longformer, amb un context mes gran: https://huggingface.co/projecte-aina/longformer-base-4096-ca-v2
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
 
