@@ -22,7 +22,7 @@ RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for th
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
 and have been trained on a medium-size corpus collected from publicly available corpora and crawlers.
 
-_RoBERTa-base-ca-v2 i BERTa són models de llenguatge basat en transformers per a la llengua catalana. Es basen en el model [RoBERTa-base](https://github.com/pytorch/fairseq/tree/master/examples/roberta) i ha estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
+_RoBERTa-base-ca-v2 i BERTa són models de llenguatge basat en transformers per a la llengua catalana. Es basen en el model [RoBERTa-base](https://github.com/pytorch/fairseq/tree/master/examples/roberta) i han estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
 
 ### Tokenization and pretraining 🧩
 
@@ -118,7 +118,7 @@ Fine-tuned from BERTa model:
 - roberta-base-ca-cased-sts for semantic textual similarity (STS): https://huggingface.co/projecte-aina/roberta-base-ca-cased-sts
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
 
-For a complete list, refer to / _Per obtenir una llista completa, consulteu el següent enllaç_: https://huggingface.co/projecte-aina/
+For a complete list, refer to. _Per obtenir una llista completa, consulteu el següent enllaç_: https://huggingface.co/projecte-aina/
 
 ### Fine-tuning
 The fine-tuning scripts for the downstream tasks are available in the following link: https://github.com/projecte-aina/club.<br/>
@@ -154,7 +154,7 @@ Available trained pipelines for Catalan in spaCy. _Pipelines per al català disp
 | CatalanQA     | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/catalanqa     |
 | xquad-ca      | Extractive Question Answering           | https://huggingface.co/datasets/projecte-aina/xquad-ca      |
 
-For a complete list, refer to: https://huggingface.co/projecte-aina/
+For a complete list, refer to. _Per obtenir una llista completa, consulteu_: https://huggingface.co/projecte-aina/
 
 ## CLUB: Catalan Language Understanding Benchmark 🏆
 The CLUB benchmark consists of 6 tasks: Named Entity Recognition (NER), Part-of-Speech Tagging (POS), Semantic Textual Similarity (STS), Text Classification (TC), Textual Entailment (TE), and Question Answering (QA). 
@@ -172,10 +172,7 @@ _El benchmark CLUB consisteix en 6 tasques: reconeixement d'entitats (NER), etiq
 
 *: Trained on CatalanQA, tested on XQuAD-Ca.
 
-For more information, refer to https://club.aina.bsc.es/ 
-
-_En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/.
-
+For more information, refer to. _Per a més informació, consulteu el següent enllaç_ https://club.aina.bsc.es/ 
 
 ## Demos
 
