@@ -46,12 +46,10 @@ _Generat a partir d'un corpus seleccionat de més de 10 GB de text d'alta qualit
 * Catalan CBOW Word Embeddings in Floret: https://zenodo.org/record/7330331
 
 Trained using an expansive Catalan textual corpus, comprising over 34GB of data, through the floret method.
-
 _Entrenat utilitzant un corpus textual català, que inclou més de 34 GB de dades, mitjançant el mètode del floret._
 
 ## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
-
 _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de corpus publics i crawlings del web._
 
 ### roberta-base-ca-v2
@@ -129,6 +127,10 @@ They are based on the HuggingFace [**Transformers**](https://github.com/huggingf
 _Els scripts de fine-tuning per aquestes tasques es poden trobar en el següent enllaç: https://github.com/projecte-aina/club.<br/>
 Es basen en la llibreria [**Transformers**](https://github.com/huggingface/transformers) de HuggingFace._
 
+## spaCy models
+
+
+
 ## Datasets 🗂️
 
 |name           | task                                    | link                                                        |
@@ -161,9 +163,13 @@ _El benchmark CLUB consisteix en 6 tasques: reconeixement d'entitats (NER), etiq
 
 *: Trained on CatalanQA, tested on XQuAD-Ca.
 
-For more information, refer [here](https://github.com/projecte-aina/club).
+For more information, refer to / _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/.
 
-_[Aquí](https://github.com/projecte-aina/club) trobareu més informació._
+
+## Demos
+
+* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._: https://bot.aina.bsc.es/#/. For all the technical details and code, refer to / En el següent enllaç hi trobare els detalls tècnics i el codi://github.com/projecte-aina/minibot
+
 
 ## Cite 📣
 ```
