@@ -134,6 +134,12 @@ Es basen en la llibreria [**Transformers**](https://github.com/huggingface/trans
   Spacy 3.5 version with enhanced dictionaries for better coverage, using projecte-aina/roberta-large-ca-v2 model with multitask training.
   _Versió Spacy 3.5 amb diccionaris millorats per a una millor cobertura, utilitzant el model project-aina/roberta-large-ca-v2 amb entrenament multitasca._
 
+* ca_bsc_demo_trf: https://huggingface.co/projecte-aina/ca_bsc_demo_trf.
+
+  Catalan transformer (projecte-aina/roberta-large-ca-v2) pipeline by BSC. Components: transformer, morphologizer, parser, ner, attribute_ruler, lemmatizer, text classification.
+
+Available trained pipelines for Catalan in spaCy. _Pipelines per al català disponibles a spaCy_: https://spacy.io/models/ca
+
 ## Datasets 🗂️
 
 |name           | task                                    | link                                                        |
