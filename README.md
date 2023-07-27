@@ -1,7 +1,6 @@
 # Models de Llengua i Datasets<br/> per al Català 💬
 # Catalan Language Models & Datasets 💬
 
-
 A repository for the [AINA project](https://politiquesdigitals.gencat.cat/ca/economia/catalonia-ai/aina/).<br/>
 _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economia/catalonia-ai/aina/)._
 
@@ -16,7 +15,7 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 
 **Ǎguila-7B** Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b) model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute. Read more [here](https://medium.com/@mpamies247/introducing-a%CC%8Cguila-a-new-open-source-llm-for-spanish-and-catalan-ee1ebc70bc79)
 
-_**Ǎguila-7B** Ǎguila és un LLM de 7B paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos. LLegiu més [aquí](https://medium.com/@mpamies247/introducing-a%CC%8Cguila-a-new-open-source-llm-for-spanish-and-catalan-ee1ebc70bc79)_.
+_**Ǎguila-7B** Ǎguila és un LLM de 7B paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos. Llegiu més [aquí](https://medium.com/@mpamies247/introducing-a%CC%8Cguila-a-new-open-source-llm-for-spanish-and-catalan-ee1ebc70bc79)_.
 
 **RoBERTa-base-ca-v2** and **BERTa** are transformer-based masked language models for the Catalan language. 
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
@@ -194,7 +193,7 @@ For more information, refer to. _Per a més informació, consulteu el següent e
 * ViquiQA: Demon of the Question and Answer model trained with the CatalanQA dataset using the Catalan Wikipedia. _Demostrador del model de Pregunta i Resposta entrenat amb el dataset CatalanQA fent servir la Viquipèdia en català._
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/viquiqa
 
-* Traductor: Automatic translators between Catalan and Spanish (general and specialized administrative-legal text) and between Catalan and English (general text). _Traductors automàtics entre català i castellà (text general i d'especialitat administratiu-legal) i entre català i anglés (text general)._
+* Traductor: Automatic translators between Catalan and Spanish (general and specialized administrative-legal text) and between Catalan and English (general text). _Traductors automàtics entre català i castellà (text general i d'especialitat administratiu-legal) i entre català i anglès (text general)._
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/traductor
 
 * oTranscribe+: Free and private speech recognition web app for transcribing recorded interviews. _Aplicació web de reconeixement de veu gratuïta i privada per a la transcripció d'entrevistes gravades._
