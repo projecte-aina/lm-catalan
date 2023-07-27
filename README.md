@@ -29,6 +29,22 @@ _**longformer-base-4096-ca-v2** és la versió Longformer del model roberta-base
 
 See results achieved on several tasks below.
 
+
+## Usage example ⚗️
+For the RoBERTa-base
+```python
+from transformers import AutoModelForMaskedLM
+from transformers import AutoTokenizer, FillMaskPipeline
+from pprint import pprint
+tokenizer_hf = AutoTokenizer.from_pretrained('BSC-TeMU/roberta-base-ca-v2')
+model = AutoModelForMaskedLM.from_pretrained('BSC-TeMU/roberta-base-ca-v2')
+model.eval()
+pipeline = FillMaskPipeline(model, tokenizer_hf)
+text = f"¡Hola <mask>!"
+res_hf = pipeline(text)
+pprint([r['token_str'] for r in res_hf])
+```
+
 ### Tokenization and pretraining 🧩
 
 The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
@@ -96,21 +112,6 @@ The Catalan Textual Corpus can be found in the following link: https://doi.org/1
 _A fi d'obtenir un corpus d'entrenament d'alta qualitat, cada corpus ha estat processat amb una pipeline d'operacions, incloent separació de frases, detecció d'idioma, filtratge de frases mal formades i deduplicació de continguts repetitius, entre d'altres. Durant el procés, hem mantingut els límits dels documents. Finalment, hem concatenat els corpus i hem aplicat una nova dedupliació._
 
 _En el següent enllaç podeu trobar el Catalan Textual Corpus: https://doi.org/10.5281/zenodo.4519348._
-
-## Usage example ⚗️
-For the RoBERTa-base
-```python
-from transformers import AutoModelForMaskedLM
-from transformers import AutoTokenizer, FillMaskPipeline
-from pprint import pprint
-tokenizer_hf = AutoTokenizer.from_pretrained('BSC-TeMU/roberta-base-ca-v2')
-model = AutoModelForMaskedLM.from_pretrained('BSC-TeMU/roberta-base-ca-v2')
-model.eval()
-pipeline = FillMaskPipeline(model, tokenizer_hf)
-text = f"¡Hola <mask>!"
-res_hf = pipeline(text)
-pprint([r['token_str'] for r in res_hf])
-```
 
 ## Fine-tuned models 🧗🏼‍♀️🏇🏼🤽🏼‍♀️🏌🏼‍♂️🏄🏼‍♀️
 
