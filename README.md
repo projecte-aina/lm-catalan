@@ -163,16 +163,20 @@ _El benchmark CLUB consisteix en 6 tasques: reconeixement d'entitats (NER), etiq
 
 *: Trained on CatalanQA, tested on XQuAD-Ca.
 
-For more information, refer to / _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/.
+For more information, refer to https://club.aina.bsc.es/ 
+
+_En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/.
 
 
 ## Demos
 
-* Bot: https://bot.aina.bsc.es/#/
-
-Demo of the integration of voice functionalities in Catalan. For all the technical details and code, refer to https://github.com/projecte-aina/minibot
-
-_Demostració d'incorporació de funcionalitats de veu en català. En el següent enllaç trobareu els detalls tècnics i el codi://github.com/projecte-aina/minibot
+* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._
+  - Link to demo. _Enllaç a la demo_: https://bot.aina.bsc.es/#/
+  - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/minibot
+    
+* spaCy: Demo of the capabilities of natural language processing chains and spaCy models implemented within the AINA project. _Demostrador de les capacitats de les cadenes de processament de llenguatge natural i models spaCy implementats dins del projecte AINA._
+  - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/spacy
+  - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/spacy_ca_demo
 
 
 ## Cite 📣
