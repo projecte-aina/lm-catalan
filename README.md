@@ -168,7 +168,11 @@ For more information, refer to / _En el següent enllaç hi trobareu més inform
 
 ## Demos
 
-* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._: https://bot.aina.bsc.es/#/. For all the technical details and code, refer to / En el següent enllaç hi trobare els detalls tècnics i el codi://github.com/projecte-aina/minibot
+* Bot: https://bot.aina.bsc.es/#/
+
+Demo of the integration of voice functionalities in Catalan. For all the technical details and code, refer to https://github.com/projecte-aina/minibot
+
+_Demostració d'incorporació de funcionalitats de veu en català. En el següent enllaç trobareu els detalls tècnics i el codi://github.com/projecte-aina/minibot
 
 
 ## Cite 📣
