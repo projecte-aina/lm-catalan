@@ -156,6 +156,8 @@ Available trained pipelines for Catalan in spaCy. _Pipelines per al català disp
 
 For a complete list, refer to. _Per obtenir una llista completa, consulteu_: https://huggingface.co/projecte-aina/
 
+For a complete list of datasets in Zenodo, refer to. _Per obtenir una llista completa dels datasets a Zenodo, consulteu_: https://zenodo.org/communities/catalan-ai/
+
 ## CLUB: Catalan Language Understanding Benchmark 🏆
 The CLUB benchmark consists of 6 tasks: Named Entity Recognition (NER), Part-of-Speech Tagging (POS), Semantic Textual Similarity (STS), Text Classification (TC), Textual Entailment (TE), and Question Answering (QA). 
 
