@@ -14,15 +14,20 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
 
-Ǎguila-7B Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b) model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute.
+**Ǎguila-7B** Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b) model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute. Read more [here](https://medium.com/@mpamies247/introducing-a%CC%8Cguila-a-new-open-source-llm-for-spanish-and-catalan-ee1ebc70bc79)
 
-_Ǎguila-7B Ǎguila és un LLM de 7B paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos._
+**_Ǎguila-7B** Ǎguila és un LLM de 7B paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos._
 
-RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
+**RoBERTa-base-ca-v2** and **BERTa** are transformer-based masked language models for the Catalan language. 
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
 and have been trained on a medium-size corpus collected from publicly available corpora and crawlers.
 
-_RoBERTa-base-ca-v2 i BERTa són models de llenguatge basat en transformers per a la llengua catalana. Es basen en el model [RoBERTa-base](https://github.com/pytorch/fairseq/tree/master/examples/roberta) i han estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
+**_RoBERTa-base-ca-v2** i **BERTa** són models de llenguatge basat en transformers per a la llengua catalana. Es basen en el model [RoBERTa-base](https://github.com/pytorch/fairseq/tree/master/examples/roberta) i han estat entrenat en un corpus de mida mitjana, a partir de corpus diponibles públicament i crawlers._
+
+**longformer-base-4096-ca-v2** is the Longformer version of the roberta-base-ca-v2 masked language model for the Catalan language. The use of these models allows us to process larger contexts (up to 4096 tokens) as input without the need of additional aggregation strategies. The pretraining process of this model started from the roberta-base-ca-v2 checkpoint and was pretrained for MLM on both short and long documents in Catalan.
+
+**longformer-base-4096-ca-v2** és la versió Longformer del model roberta-base-ca-v2 per a la llengua catalana. L'ús d'aquests models ens permet processar contextos més grans (fins a 4096 tokens) com a entrada sense necessitat d'estratègies d'agregació addicionals. El procés de formació prèvia d'aquest model va començar des del checkpoint roberta-base-ca-v2 i es va entrenar prèviament per a MLM en documents curts i llargs en català.
+
 
 ### Tokenization and pretraining 🧩
 
