@@ -129,7 +129,7 @@ Es basen en la llibreria [**Transformers**](https://github.com/huggingface/trans
 
 ## spaCy models
 
-
+* ca_bsc_core_trf: https://huggingface.co/projecte-aina/ca_bsc_core_trf. Spacy 3.5 version with enhanced dictionaries for better coverage, using projecte-aina/roberta-large-ca-v2 model with multitask training. _Versió Spacy 3.5 amb diccionaris millorats per a una millor cobertura, utilitzant el model project-aina/roberta-large-ca-v2 amb entrenament multitasca
 
 ## Datasets 🗂️
 
@@ -170,7 +170,8 @@ _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/
 
 ## Demos
 
-* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._: https://bot.aina.bsc.es/#/
+* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._
+  - Link to demo. _Enllaç a la demo_: https://bot.aina.bsc.es/#/
   - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/minibot
     
 * spaCy: Demo of the capabilities of natural language processing chains and spaCy models implemented within the AINA project. _Demostrador de les capacitats de les cadenes de processament de llenguatge natural i models spaCy implementats dins del projecte AINA._
