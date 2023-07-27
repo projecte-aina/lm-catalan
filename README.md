@@ -129,7 +129,9 @@ Es basen en la llibreria [**Transformers**](https://github.com/huggingface/trans
 
 ## spaCy models
 
-* ca_bsc_core_trf: https://huggingface.co/projecte-aina/ca_bsc_core_trf. Spacy 3.5 version with enhanced dictionaries for better coverage, using projecte-aina/roberta-large-ca-v2 model with multitask training. _Versió Spacy 3.5 amb diccionaris millorats per a una millor cobertura, utilitzant el model project-aina/roberta-large-ca-v2 amb entrenament multitasca
+* ca_bsc_core_trf: https://huggingface.co/projecte-aina/ca_bsc_core_trf.
+  Spacy 3.5 version with enhanced dictionaries for better coverage, using projecte-aina/roberta-large-ca-v2 model with multitask training.
+  _Versió Spacy 3.5 amb diccionaris millorats per a una millor cobertura, utilitzant el model project-aina/roberta-large-ca-v2 amb entrenament multitasca._
 
 ## Datasets 🗂️
 
