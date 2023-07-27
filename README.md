@@ -27,6 +27,7 @@ _**RoBERTa-base-ca-v2** i **BERTa** són models de llenguatge basat en transform
 
 _**longformer-base-4096-ca-v2** és la versió Longformer del model roberta-base-ca-v2 per a la llengua catalana. L'ús d'aquests models permet processar contextos més grans (fins a 4096 tokens) com a entrada sense necessitat d'estratègies d'agregació addicionals. El procés de pre-entrenament d'aquest model va començar al checkpoint roberta-base-ca-v2 i es va pre-entrenar per a MLM en documents curts i llargs en català._
 
+See results achieved on several tasks below.
 
 ### Tokenization and pretraining 🧩
 
