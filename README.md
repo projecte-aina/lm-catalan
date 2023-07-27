@@ -24,11 +24,9 @@ _RoBERTa-ca-v2 i BERTa són models de llenguatge basat en transformers per a la 
 
 ### Tokenization and pretraining 🧩
 
-The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2)
-used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
+The training corpus has been tokenized using a byte version of [Byte-Pair Encoding (BPE)](https://github.com/openai/gpt-2) used in the original [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) model with a vocabulary size of 52,000 tokens. 
 
-The RoBERTa-ca-v2 pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work.
-With 16 NVIDIA V100 GPUs of 16GB DDRAM the training lasted a total of 48 hours for BERTa and a total of 96 hours for RoBERTa-ca-v2.
+The RoBERTa-ca-v2 pretraining consists of a masked language model training that follows the approach employed for the RoBERTa base model with the same hyperparameters as in the original work. With 16 NVIDIA V100 GPUs of 16GB DDRAM the training lasted a total of 48 hours for BERTa and a total of 96 hours for RoBERTa-ca-v2.
 
 _El corpus d'entrenament ha estat tokenitzat fent servir un [(BPE) a nivell de bytes](https://github.com/openai/gpt-2) utilitzat en el model [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) original, amb una vocabulari de 52.000 tokens._
 
@@ -38,16 +36,17 @@ _El pre-entrenament de BERTa consisteix en un entrenament de model de llenguatge
 
 * Catalan Word Embeddings in FastText: https://doi.org/10.5281/zenodo.4522040
 
-The embeddings were generated from a curated corpus of over 10GB of high-quality text.
+Generated from a curated corpus of over 10GB of high-quality text.
 
 ## Word Embeddings (more efficient Floret version)
 
 * Catalan CBOW Word Embeddings in Floret: https://zenodo.org/record/7330331
 
-The embeddings were trained using the expansive Catalan textual corpus, comprising over 34GB of data, through the floret method.
+Trained using the expansive Catalan textual corpus, comprising over 34GB of data, through the floret method.
 
 ## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
+
 _Els corpus d'entrenament són la suma de diversos corpus obtinguts a partir de corpus publics i crawlings del web._
 
 ### roberta-base-ca-v2
@@ -115,6 +114,8 @@ Fine-tuned from BERTa model:
 - roberta-base-ca-cased-te for textual entailment: https://huggingface.co/projecte-aina/roberta-base-ca-cased-te
 - roberta-base-ca-cased-sts for semantic textual similarity (STS): https://huggingface.co/projecte-aina/roberta-base-ca-cased-sts
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
+
+For a complete list, check: https://huggingface.co/projecte-aina/
 
 ### Fine-tuning
 The fine-tuning scripts for the downstream tasks are available here: https://github.com/projecte-aina/club.<br/>
