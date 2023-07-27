@@ -9,14 +9,12 @@ _Repositori del [projecte AINA](https://politiquesdigitals.gencat.cat/ca/economi
 ## Models 🤖
 * ✨ <b>new</b> ✨ Ǎguila-7B: https://huggingface.co/projecte-aina/aguila-7b
 * roberta-base-ca-v2: https://huggingface.co/projecte-aina/roberta-base-ca-v2
-* version "large": https://huggingface.co/projecte-aina/roberta-large-ca-v2
-* versió  longformer, amb un context mes gran: https://huggingface.co/projecte-aina/longformer-base-4096-ca-v2
+* roberta-large-ca-v2: https://huggingface.co/projecte-aina/roberta-large-ca-v2
+* longformer-base-4096-ca-v2: https://huggingface.co/projecte-aina/longformer-base-4096-ca-v2
 * BERTa: https://huggingface.co/PlanTL-GOB-ES/roberta-base-ca
 
 
 Ǎguila-7B Ǎguila is a 7B parameters LLM that has been trained on a mixture of Spanish, Catalan and English data, adding up to a total of 26B tokens. It uses the [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b) model as a starting point, a state-of-the-art English language model that was openly released just a few months ago by the Technology Innovation Institute.
-
-_Ǎguila-7B Ǎguila és un LLM de 7B de paràmetres que s'ha entrenat amb dades en castellà, català i anglès, sumant un total de 26B tokens. Utilitza com a punt de partida el model [Falcon-7b](https://huggingface.co/tiiuae/falcon-7b), un model d'última generació en llengua anglesa que l'Technology Innovation Institute va publicar obertament fa només uns mesos._
 
 RoBERTa-base-ca-v2 and BERTa are transformer-based masked language models for the Catalan language. 
 They are based on the [RoBERTA](https://github.com/pytorch/fairseq/tree/master/examples/roberta) base model 
@@ -38,11 +36,15 @@ _El pre-entrenament de BERTa consisteix en un entrenament de model de llenguatge
 
 ## Word embeddings (FastText) 🔤
 
-https://doi.org/10.5281/zenodo.4522040
+* Catalan Word Embeddings in FastText: https://doi.org/10.5281/zenodo.4522040
+
+The embeddings were generated from a curated corpus of over 10GB of high-quality text.
 
 ## Word Embeddings (more efficient Floret version)
 
-https://zenodo.org/record/7330331
+* Catalan CBOW Word Embeddings in Floret: https://zenodo.org/record/7330331
+
+The embeddings were trained using the expansive Catalan textual corpus, comprising over 34GB of data, through the floret method.
 
 ## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
