@@ -46,7 +46,7 @@ _Generat a partir d'un corpus seleccionat de més de 10 GB de text d'alta qualit
 * Catalan CBOW Word Embeddings in Floret: https://zenodo.org/record/7330331
 
 Trained using an expansive Catalan textual corpus, comprising over 34GB of data, through the floret method.
-_Entrenat utilitzant un corpus textual català, que inclou més de 34 GB de dades, mitjançant el mètode del floret._
+_Entrenat utilitzant un corpus textual català de 34 GB de dades mitjançant el mètode floret._
 
 ## Training corpora
 The training corpora consists of several corpora gathered from web crawling and public corpora.
@@ -118,7 +118,7 @@ Fine-tuned from BERTa model:
 - roberta-base-ca-cased-sts for semantic textual similarity (STS): https://huggingface.co/projecte-aina/roberta-base-ca-cased-sts
 - roberta-base-ca-cased-sts for extractive question answering (QA): https://huggingface.co/projecte-aina/roberta-base-ca-cased-qa
 
-For a complete list, refer to: https://huggingface.co/projecte-aina/
+For a complete list, refer to / _Per obtenir una llista completa, consulteu el següent enllaç_: https://huggingface.co/projecte-aina/
 
 ### Fine-tuning
 The fine-tuning scripts for the downstream tasks are available in the following link: https://github.com/projecte-aina/club.<br/>
