@@ -170,8 +170,7 @@ _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/
 
 ## Demos
 
-* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._
-  - Link to demo. _Enllaç a la demo_: https://bot.aina.bsc.es/#/
+* Bot: Demo of the integration of voice functionalities in Catalan. _Demostració d'incorporació de funcionalitats de veu en català._: https://bot.aina.bsc.es/#/
   - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/minibot
     
 * spaCy: Demo of the capabilities of natural language processing chains and spaCy models implemented within the AINA project. _Demostrador de les capacitats de les cadenes de processament de llenguatge natural i models spaCy implementats dins del projecte AINA._
@@ -184,7 +183,16 @@ _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/
 * Traductor: Automatic translators between Catalan and Spanish (general and specialized administrative-legal text) and between Catalan and English (general text). _Traductors automàtics entre català i castellà (text general i d'especialitat administratiu-legal) i entre català i anglés (text general)._
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/traductor
 
+* oTranscribe+: Free and private speech recognition web app for transcribing recorded interviews. _Aplicació web de reconeixement de veu gratuïta i privada per a la transcripció d'entrevistes gravades._
+  - Link to demo. _Enllaç a la demo_: https://otranscribe.bsc.es/
 
+* CLUB: Platform for comparative evaluation of language models for Catalan. _Plataforma d'avaluació comparativa de models de llengua per al català._
+  - Link to demo. _Enllaç a la demo_: https://club.aina.bsc.es/
+
+* TTS: Multi-speaker speech synthesis engine demo. _Demostrador del motor de síntesi de parla multi parlant._
+  - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/tts
+  
+  
 ## Cite 📣
 ```
 @inproceedings{armengol-estape-etal-2021-multilingual,
