@@ -178,6 +178,12 @@ _En el següent enllaç hi trobareu més informació_: https://club.aina.bsc.es/
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/spacy
   - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/spacy_ca_demo
 
+* ViquiQA: Demon of the Question and Answer model trained with the CatalanQA dataset using the Catalan Wikipedia. _Demostrador del model de Pregunta i Resposta entrenat amb el dataset CatalanQA fent servir la Viquipèdia en català._
+  - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/viquiqa
+
+* Traductor: Automatic translators between Catalan and Spanish (general and specialized administrative-legal text) and between Catalan and English (general text). _Traductors automàtics entre català i castellà (text general i d'especialitat administratiu-legal) i entre català i anglés (text general)._
+  - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/traductor
+
 
 ## Cite 📣
 ```
