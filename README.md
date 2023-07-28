@@ -190,7 +190,6 @@ For more information, refer to. _Per a més informació, consulteu el següent e
     
 * spaCy: Demo of the capabilities of natural language processing chains and spaCy models implemented within the AINA project. _Demostrador de les capacitats de les cadenes de processament de llenguatge natural i models spaCy implementats dins del projecte AINA._
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/spacy
-  - Link to code. _Enllaç al codi_: https://github.com/projecte-aina/spacy_ca_demo
 
 * ViquiQA: Demo of the Question and Answer model trained with the CatalanQA dataset using the Catalan Wikipedia. _Demostrador del model de Pregunta i Resposta entrenat amb el dataset CatalanQA fent servir la Viquipèdia en català._
   - Link to demo. _Enllaç a la demo_: https://aina.bsc.es/apps/viquiqa
